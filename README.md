@@ -18,11 +18,11 @@ La aplicación está desplegada en **Vercel**, una plataforma moderna de hosting
 
 - **9 Ejercicios Interactivos**: Cada ejercicio incluye:
   - Enunciado del problema con entrada y salida esperada.
-  - PDF explicativo o video introductorio.
+  - PDF explicativo.
   - Visualización interactiva del algoritmo.
   - Plantilla de código editable en línea (OnlineGDB).
   - Solución completa con código y video explicativo.
-  - Enlace a repositorio GitLab con la implementación.
+  - Enlace a repositorio GitHub con la implementación.
   - Análisis detallado de complejidad temporal y espacial.
 
 - **Ejercicios Disponibles**:
@@ -70,10 +70,10 @@ La aplicación está desplegada en **Vercel**, una plataforma moderna de hosting
 
 2. **Página de Ejercicio**:
    - **Enunciado**: Lee la descripción del problema, entrada y salida esperada.
-   - **Explicación**: Ve el PDF explicativo o video introductorio.
+   - **Explicación**: Ve el PDF explicativo.
    - **Visualización**: Interactúa con la demostración visual del algoritmo.
    - **Prueba Tú Mismo**: Haz clic en "Plantilla del ejercicio" para editar y ejecutar código en OnlineGDB.
-   - **Solución**: Revisa la solución completa en PDF o video, y accede al código en GitLab.
+   - **Solución**: Revisa la solución completa en PDF, y accede al código en GitHub.
    - **Complejidad**: Estudia el análisis de complejidad en el PDF correspondiente.
    - **Navegación**: Usa los botones para ir al ejercicio anterior o siguiente.
 
@@ -81,9 +81,9 @@ La aplicación está desplegada en **Vercel**, una plataforma moderna de hosting
 
 - **Frontend**: React 18 con Vite
 - **Enrutamiento**: React Router DOM
-- **Estilos**: Bootstrap 5 y CSS personalizado
+- **Estilos**: Tailwind y CSS personalizado
 - **Visualizaciones**: Componentes React personalizados
-- **Recursos**: PDFs embebidos, videos de YouTube, enlaces externos
+- **Recursos**: PDFs embebidos, enlaces externos
 
 ### Estructura del Proyecto
 
