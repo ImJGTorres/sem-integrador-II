@@ -109,7 +109,7 @@ const Exercise = () => {
           <div className="textoDer col-12 col-md-4 pe-lg-5">
             <div className="content-wrapper">
               <h3>Solución del ejercicio</h3>
-              <p>En este video se presenta la solución del ejercicio mediante dos soluciones, una cándida y otra óptima, adicionalmente dejamos el enlace de la solución en gitlab para más profundización.
+              <p>En este pdf se presenta la solución del ejercicio mediante dos soluciones, una cándida y otra óptima, adicionalmente dejamos el enlace de la solución en GitHub para más profundización.
               </p>
               <div className="button-container">
                 <button className="btn-1" onClick={() => window.open(data.github)}>GitHub</button>
