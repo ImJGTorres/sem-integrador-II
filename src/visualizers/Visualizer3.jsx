@@ -9,10 +9,6 @@ const Visualizer3 = () => {
     let secuencia = [];
     let velocidad = 500;
 
-    function dormir(ms) {
-      return new Promise(resolve => setTimeout(resolve, ms));
-    }
-
     function metodoCandido() {
       const n = secuencia.length;
       const a = new Array(n);

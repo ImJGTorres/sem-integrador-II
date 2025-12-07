@@ -34,7 +34,6 @@ const Visualizer9 = () => {
       const n = pilas.length;
       const m = jugosos.length;
       const result = new Array(m);
-      let pasoVis = 0;
 
       const pref = new Array(n);
       pref[0] = pilas[0];
@@ -43,7 +42,6 @@ const Visualizer9 = () => {
       for (let j = 0; j < m; j++) {
         result[j] = -1;
         for (let i = 0; i < n; i++) {
-          pasoVis++;
           dibujarBarras(pref, Math.max(...pref) + 1, [i]);
           document.getElementById('info').innerText = `Gusano ${j + 1} (${jugosos[j]}) – pila ${i + 1} = ${pref[i]}`;
           await dormir(velocidad);
@@ -66,10 +64,8 @@ const Visualizer9 = () => {
       for (let i = 1; i < n; i++) pref[i] = pref[i - 1] + pilas[i];
 
       const result = new Array(m);
-      let pasoVis = 0;
 
       for (let j = 0; j < m; j++) {
-        pasoVis++;
         const g = jugosos[j];
 
         let izq = 0;

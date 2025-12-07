@@ -13,7 +13,7 @@ const Visualizer6 = () => {
       return new Promise(resolve => setTimeout(resolve, ms));
     }
 
-    function dibujarBarras(vec, limite, resaltados = [], maxSuma = 0) {
+    function dibujarBarras(vec, limite, resaltados = []) {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       const ancho = canvas.width / vec.length;
       const maxValor = Math.max(...vec, limite);
@@ -31,7 +31,6 @@ const Visualizer6 = () => {
 
     async function metodoCandido() {
       const result = [];
-      let pasoVis = 0;
 
       for (const c of casos) {
         const vec = new Array(c + 1).fill(0);
@@ -46,7 +45,6 @@ const Visualizer6 = () => {
           }
           vec[k] = suma + vec[k - 1];
 
-          pasoVis++;
           dibujarBarras(vec, Math.max(...vec), [k], vec[k]);
           document.getElementById('info').innerText = `Caso ${c} – paso ${k}: vec[${k}] = ${vec[k]}`;
           await dormir(velocidad);
@@ -74,10 +72,8 @@ const Visualizer6 = () => {
       }
 
       const result = casos.map(c => vec[c]);
-      let pasoVis = 0;
 
       for (const c of casos) {
-        pasoVis++;
         const valor = vec[c];
         dibujarBarras([valor], valor, [0], valor);
         document.getElementById('info').innerText = `Caso ${c} – consulta directa: ${valor}`;

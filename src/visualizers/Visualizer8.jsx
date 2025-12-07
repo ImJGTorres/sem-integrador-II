@@ -14,7 +14,7 @@ const Visualizer8 = () => {
       return new Promise(resolve => setTimeout(resolve, ms));
     }
 
-    function dibujarBarras(ratings, limite, resaltados = [], maxSuma = 0) {
+    function dibujarBarras(ratings, limite, resaltados = []) {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       const ancho = canvas.width / ratings.length;
       const maxValor = Math.max(...ratings, limite);
